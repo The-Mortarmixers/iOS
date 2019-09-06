@@ -15,6 +15,7 @@ class ScanViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -22,6 +23,11 @@ class ScanViewController: UIViewController {
     }
 
     fileprivate func setUpCaptureSession() {
+        guard avCaptureSession == nil else {
+            avCaptureSession?.startRunning()
+            return
+        }
+
         let session = AVCaptureSession()
         // We don't need to control audio and video output settings
         session.sessionPreset = AVCaptureSession.Preset.inputPriority
@@ -78,6 +84,15 @@ extension ScanViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
         guard let features = featuresOptional, features.count > 0 else { return }
 
-        print((features.first as? CIQRCodeFeature)?.messageString)
+        guard let qrString = (features.first as? CIQRCodeFeature)?.messageString else { return }
+        print(qrString)
+
+        if qrString == "Techfest19" {
+            avCaptureSession?.stopRunning()
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.performSegue(withIdentifier: "QRCodeScannedSegue", sender: nil)
+            }
+        }
     }
 }
