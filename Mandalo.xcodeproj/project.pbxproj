@@ -15,6 +15,7 @@
 		BB6DAE302322EB4E0046F063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6DAE2E2322EB4E0046F063 /* LaunchScreen.storyboard */; };
 		BB6DAE3B2322EB4E0046F063 /* MandaloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE3A2322EB4E0046F063 /* MandaloTests.swift */; };
 		BB6DAE462322EB4E0046F063 /* MandaloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE452322EB4E0046F063 /* MandaloUITests.swift */; };
+		BB6DAE542322EC1B0046F063 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE532322EC1B0046F063 /* ScanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BB6DAE412322EB4E0046F063 /* MandaloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MandaloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6DAE452322EB4E0046F063 /* MandaloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandaloUITests.swift; sourceTree = "<group>"; };
 		BB6DAE472322EB4E0046F063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6DAE532322EC1B0046F063 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +104,11 @@
 				BB6DAE222322EB490046F063 /* AppDelegate.swift */,
 				BB6DAE242322EB490046F063 /* ViewController.swift */,
 				BB6DAE262322EB490046F063 /* Main.storyboard */,
-				BB6DAE2C2322EB4E0046F063 /* Assets.xcassets */,
 				BB6DAE2E2322EB4E0046F063 /* LaunchScreen.storyboard */,
+				BB6DAE2C2322EB4E0046F063 /* Assets.xcassets */,
 				BB6DAE312322EB4E0046F063 /* Info.plist */,
 				BB6DAE292322EB490046F063 /* Mandalo.xcdatamodeld */,
+				BB6DAE532322EC1B0046F063 /* ScanViewController.swift */,
 			);
 			path = Mandalo;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				BB6DAE252322EB490046F063 /* ViewController.swift in Sources */,
 				BB6DAE2B2322EB490046F063 /* Mandalo.xcdatamodeld in Sources */,
 				BB6DAE232322EB490046F063 /* AppDelegate.swift in Sources */,
+				BB6DAE542322EC1B0046F063 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
