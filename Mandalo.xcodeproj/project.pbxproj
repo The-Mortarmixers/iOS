@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB6DAE232322EB490046F063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE222322EB490046F063 /* AppDelegate.swift */; };
+		BB6DAE252322EB490046F063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE242322EB490046F063 /* ViewController.swift */; };
+		BB6DAE282322EB490046F063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6DAE262322EB490046F063 /* Main.storyboard */; };
+		BB6DAE2B2322EB490046F063 /* Mandalo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE292322EB490046F063 /* Mandalo.xcdatamodeld */; };
+		BB6DAE2D2322EB4E0046F063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6DAE2C2322EB4E0046F063 /* Assets.xcassets */; };
+		BB6DAE302322EB4E0046F063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6DAE2E2322EB4E0046F063 /* LaunchScreen.storyboard */; };
+		BB6DAE3B2322EB4E0046F063 /* MandaloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE3A2322EB4E0046F063 /* MandaloTests.swift */; };
+		BB6DAE462322EB4E0046F063 /* MandaloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE452322EB4E0046F063 /* MandaloUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB6DAE372322EB4E0046F063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB6DAE172322EB490046F063 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB6DAE1E2322EB490046F063;
+			remoteInfo = Mandalo;
+		};
+		BB6DAE422322EB4E0046F063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB6DAE172322EB490046F063 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB6DAE1E2322EB490046F063;
+			remoteInfo = Mandalo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB6DAE1F2322EB490046F063 /* Mandalo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mandalo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB6DAE222322EB490046F063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB6DAE242322EB490046F063 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB6DAE272322EB490046F063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB6DAE2A2322EB490046F063 /* Mandalo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mandalo.xcdatamodel; sourceTree = "<group>"; };
+		BB6DAE2C2322EB4E0046F063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB6DAE2F2322EB4E0046F063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB6DAE312322EB4E0046F063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6DAE362322EB4E0046F063 /* MandaloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MandaloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB6DAE3A2322EB4E0046F063 /* MandaloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandaloTests.swift; sourceTree = "<group>"; };
+		BB6DAE3C2322EB4E0046F063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6DAE412322EB4E0046F063 /* MandaloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MandaloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB6DAE452322EB4E0046F063 /* MandaloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandaloUITests.swift; sourceTree = "<group>"; };
+		BB6DAE472322EB4E0046F063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB6DAE1C2322EB490046F063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6DAE332322EB4E0046F063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6DAE3E2322EB4E0046F063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB6DAE162322EB490046F063 = {
+			isa = PBXGroup;
+			children = (
+				BB6DAE212322EB490046F063 /* Mandalo */,
+				BB6DAE392322EB4E0046F063 /* MandaloTests */,
+				BB6DAE442322EB4E0046F063 /* MandaloUITests */,
+				BB6DAE202322EB490046F063 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB6DAE202322EB490046F063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB6DAE1F2322EB490046F063 /* Mandalo.app */,
+				BB6DAE362322EB4E0046F063 /* MandaloTests.xctest */,
+				BB6DAE412322EB4E0046F063 /* MandaloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB6DAE212322EB490046F063 /* Mandalo */ = {
+			isa = PBXGroup;
+			children = (
+				BB6DAE222322EB490046F063 /* AppDelegate.swift */,
+				BB6DAE242322EB490046F063 /* ViewController.swift */,
+				BB6DAE262322EB490046F063 /* Main.storyboard */,
+				BB6DAE2C2322EB4E0046F063 /* Assets.xcassets */,
+				BB6DAE2E2322EB4E0046F063 /* LaunchScreen.storyboard */,
+				BB6DAE312322EB4E0046F063 /* Info.plist */,
+				BB6DAE292322EB490046F063 /* Mandalo.xcdatamodeld */,
+			);
+			path = Mandalo;
+			sourceTree = "<group>";
+		};
+		BB6DAE392322EB4E0046F063 /* MandaloTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB6DAE3A2322EB4E0046F063 /* MandaloTests.swift */,
+				BB6DAE3C2322EB4E0046F063 /* Info.plist */,
+			);
+			path = MandaloTests;
+			sourceTree = "<group>";
+		};
+		BB6DAE442322EB4E0046F063 /* MandaloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB6DAE452322EB4E0046F063 /* MandaloUITests.swift */,
+				BB6DAE472322EB4E0046F063 /* Info.plist */,
+			);
+			path = MandaloUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB6DAE1E2322EB490046F063 /* Mandalo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB6DAE4A2322EB4E0046F063 /* Build configuration list for PBXNativeTarget "Mandalo" */;
+			buildPhases = (
+				BB6DAE1B2322EB490046F063 /* Sources */,
+				BB6DAE1C2322EB490046F063 /* Frameworks */,
+				BB6DAE1D2322EB490046F063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mandalo;
+			productName = Mandalo;
+			productReference = BB6DAE1F2322EB490046F063 /* Mandalo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB6DAE352322EB4E0046F063 /* MandaloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB6DAE4D2322EB4E0046F063 /* Build configuration list for PBXNativeTarget "MandaloTests" */;
+			buildPhases = (
+				BB6DAE322322EB4E0046F063 /* Sources */,
+				BB6DAE332322EB4E0046F063 /* Frameworks */,
+				BB6DAE342322EB4E0046F063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB6DAE382322EB4E0046F063 /* PBXTargetDependency */,
+			);
+			name = MandaloTests;
+			productName = MandaloTests;
+			productReference = BB6DAE362322EB4E0046F063 /* MandaloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB6DAE402322EB4E0046F063 /* MandaloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB6DAE502322EB4E0046F063 /* Build configuration list for PBXNativeTarget "MandaloUITests" */;
+			buildPhases = (
+				BB6DAE3D2322EB4E0046F063 /* Sources */,
+				BB6DAE3E2322EB4E0046F063 /* Frameworks */,
+				BB6DAE3F2322EB4E0046F063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB6DAE432322EB4E0046F063 /* PBXTargetDependency */,
+			);
+			name = MandaloUITests;
+			productName = MandaloUITests;
+			productReference = BB6DAE412322EB4E0046F063 /* MandaloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB6DAE172322EB490046F063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Kevin Schaefer";
+				TargetAttributes = {
+					BB6DAE1E2322EB490046F063 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					BB6DAE352322EB4E0046F063 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = BB6DAE1E2322EB490046F063;
+					};
+					BB6DAE402322EB4E0046F063 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = BB6DAE1E2322EB490046F063;
+					};
+				};
+			};
+			buildConfigurationList = BB6DAE1A2322EB490046F063 /* Build configuration list for PBXProject "Mandalo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB6DAE162322EB490046F063;
+			productRefGroup = BB6DAE202322EB490046F063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB6DAE1E2322EB490046F063 /* Mandalo */,
+				BB6DAE352322EB4E0046F063 /* MandaloTests */,
+				BB6DAE402322EB4E0046F063 /* MandaloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB6DAE1D2322EB490046F063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6DAE302322EB4E0046F063 /* LaunchScreen.storyboard in Resources */,
+				BB6DAE2D2322EB4E0046F063 /* Assets.xcassets in Resources */,
+				BB6DAE282322EB490046F063 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6DAE342322EB4E0046F063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6DAE3F2322EB4E0046F063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB6DAE1B2322EB490046F063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6DAE252322EB490046F063 /* ViewController.swift in Sources */,
+				BB6DAE2B2322EB490046F063 /* Mandalo.xcdatamodeld in Sources */,
+				BB6DAE232322EB490046F063 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6DAE322322EB4E0046F063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6DAE3B2322EB4E0046F063 /* MandaloTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6DAE3D2322EB4E0046F063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6DAE462322EB4E0046F063 /* MandaloUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB6DAE382322EB4E0046F063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB6DAE1E2322EB490046F063 /* Mandalo */;
+			targetProxy = BB6DAE372322EB4E0046F063 /* PBXContainerItemProxy */;
+		};
+		BB6DAE432322EB4E0046F063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB6DAE1E2322EB490046F063 /* Mandalo */;
+			targetProxy = BB6DAE422322EB4E0046F063 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB6DAE262322EB490046F063 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB6DAE272322EB490046F063 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB6DAE2E2322EB4E0046F063 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB6DAE2F2322EB4E0046F063 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB6DAE482322EB4E0046F063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB6DAE492322EB4E0046F063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB6DAE4B2322EB4E0046F063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CXFSS8Q3N;
+				INFOPLIST_FILE = Mandalo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.schaefkn.Mandalo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB6DAE4C2322EB4E0046F063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CXFSS8Q3N;
+				INFOPLIST_FILE = Mandalo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.schaefkn.Mandalo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB6DAE4E2322EB4E0046F063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CXFSS8Q3N;
+				INFOPLIST_FILE = MandaloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.schaefkn.MandaloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mandalo.app/Mandalo";
+			};
+			name = Debug;
+		};
+		BB6DAE4F2322EB4E0046F063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CXFSS8Q3N;
+				INFOPLIST_FILE = MandaloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.schaefkn.MandaloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mandalo.app/Mandalo";
+			};
+			name = Release;
+		};
+		BB6DAE512322EB4E0046F063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CXFSS8Q3N;
+				INFOPLIST_FILE = MandaloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.schaefkn.MandaloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mandalo;
+			};
+			name = Debug;
+		};
+		BB6DAE522322EB4E0046F063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CXFSS8Q3N;
+				INFOPLIST_FILE = MandaloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.schaefkn.MandaloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mandalo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB6DAE1A2322EB490046F063 /* Build configuration list for PBXProject "Mandalo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB6DAE482322EB4E0046F063 /* Debug */,
+				BB6DAE492322EB4E0046F063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB6DAE4A2322EB4E0046F063 /* Build configuration list for PBXNativeTarget "Mandalo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB6DAE4B2322EB4E0046F063 /* Debug */,
+				BB6DAE4C2322EB4E0046F063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB6DAE4D2322EB4E0046F063 /* Build configuration list for PBXNativeTarget "MandaloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB6DAE4E2322EB4E0046F063 /* Debug */,
+				BB6DAE4F2322EB4E0046F063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB6DAE502322EB4E0046F063 /* Build configuration list for PBXNativeTarget "MandaloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB6DAE512322EB4E0046F063 /* Debug */,
+				BB6DAE522322EB4E0046F063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB6DAE292322EB490046F063 /* Mandalo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB6DAE2A2322EB490046F063 /* Mandalo.xcdatamodel */,
+			);
+			currentVersion = BB6DAE2A2322EB490046F063 /* Mandalo.xcdatamodel */;
+			path = Mandalo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BB6DAE172322EB490046F063 /* Project object */;
+}
