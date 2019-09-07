@@ -103,18 +103,31 @@
         <!--Dashboard-->
         <scene sceneID="cOH-TF-Dte">
             <objects>
-                <tableViewController id="ic5-tb-taY" customClass="DashbaordTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wj4-sx-vzO">
+                <tableViewController id="ic5-tb-taY" customClass="DashboardTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wj4-sx-vzO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smart-home" id="xEZ-Dp-ahf">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="203"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aKp-xc-huQ">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dashboardCell" textLabel="Fha-hG-sp4" style="IBUITableViewCellStyleDefault" id="aKp-xc-huQ">
+                                <rect key="frame" x="0.0" y="231" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aKp-xc-huQ" id="pgI-dZ-ICS">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fha-hG-sp4">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -127,7 +140,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KRN-pk-BbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="-710"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="-710.49107142857144"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="LnM-hm-B3D">
@@ -513,7 +526,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOT-Tb-mRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3845" y="1597"/>
+            <point key="canvasLocation" x="3741" y="1598"/>
         </scene>
         <!--Tuition-->
         <scene sceneID="cSA-Nj-Mte">
@@ -584,6 +597,7 @@
         <image name="ingredients" width="750" height="535"/>
         <image name="qrcode" width="30" height="30"/>
         <image name="settings" width="30" height="30"/>
+        <image name="smart-home" width="868" height="441"/>
         <image name="tuition" width="30" height="30"/>
     </resources>
 </document>

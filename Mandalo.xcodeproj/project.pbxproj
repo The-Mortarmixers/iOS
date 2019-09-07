@@ -11,6 +11,7 @@
 		BB32E80E2323B996000421CA /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32E80D2323B996000421CA /* IngredientsTableViewController.swift */; };
 		BB32E8102323BC9F000421CA /* RulerARProViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32E80F2323BC9F000421CA /* RulerARProViewController.swift */; };
 		BB32E8142323DEBC000421CA /* MandaloButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32E8132323DEBC000421CA /* MandaloButton.swift */; };
+		BB32E8162323EB5F000421CA /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32E8152323EB5F000421CA /* DashboardTableViewController.swift */; };
 		BB6DAE232322EB490046F063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE222322EB490046F063 /* AppDelegate.swift */; };
 		BB6DAE252322EB490046F063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE242322EB490046F063 /* ViewController.swift */; };
 		BB6DAE282322EB490046F063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6DAE262322EB490046F063 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		BB32E80D2323B996000421CA /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
 		BB32E80F2323BC9F000421CA /* RulerARProViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerARProViewController.swift; sourceTree = "<group>"; };
 		BB32E8132323DEBC000421CA /* MandaloButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandaloButton.swift; sourceTree = "<group>"; };
+		BB32E8152323EB5F000421CA /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
 		BB6DAE1F2322EB490046F063 /* Mandalo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mandalo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6DAE222322EB490046F063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB6DAE242322EB490046F063 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				E1220FBB2323B41900E2E632 /* MQTTServicer.swift */,
 				E1220FBD2323CFF300E2E632 /* MassProvider.swift */,
 				BB32E8132323DEBC000421CA /* MandaloButton.swift */,
+				BB32E8152323EB5F000421CA /* DashboardTableViewController.swift */,
 			);
 			path = Mandalo;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB32E8102323BC9F000421CA /* RulerARProViewController.swift in Sources */,
+				BB32E8162323EB5F000421CA /* DashboardTableViewController.swift in Sources */,
 				BB6DAE252322EB490046F063 /* ViewController.swift in Sources */,
 				E1220FB623238E3600E2E632 /* Measurements.swift in Sources */,
 				BB32E80E2323B996000421CA /* IngredientsTableViewController.swift in Sources */,
