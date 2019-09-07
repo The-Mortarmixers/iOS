@@ -16,10 +16,9 @@ class IngredientsTableViewController: UITableViewController {
     }
 
     // TODO: Ingredients Überarbeiten
-    let data = [IngredientData(name: "Mortar", percent: 20),
-                IngredientData(name: "Human Body", percent: 5),
-                IngredientData(name: "Sand", percent: 70),
-                IngredientData(name: "Roboy", percent: 5)]
+    let data = [IngredientData(name: "Mortar", percent: 3),
+                IngredientData(name: "Lime", percent: 2),
+                IngredientData(name: "Sand", percent: 12),]
 
 
     override func viewDidLoad() {
@@ -50,7 +49,8 @@ class IngredientsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell", for: indexPath)
 
         cell.textLabel?.text = data[indexPath.row].name
-        cell.detailTextLabel?.text = "\(data[indexPath.row].percent)%"
+        let unit = data[indexPath.row].percent == 1 ? "Unit" : "Units"
+        cell.detailTextLabel?.text = "\(data[indexPath.row].percent) \(unit)"
 
         return cell
     }

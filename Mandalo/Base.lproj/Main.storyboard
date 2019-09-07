@@ -20,7 +20,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Infos" id="Dpl-bB-mZA"/>
+                    <navigationItem key="navigationItem" title="Infos" id="Dpl-bB-mZA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="NUt-wk-rGn"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="x3m-Hp-NZv" kind="show" identifier="QRCodeScannedSegue" id="Sae-Wl-sgr"/>
                     </connections>
@@ -29,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="137.94642857142856"/>
         </scene>
-        <!--Ingredients-->
+        <!--Ardex S7 Plus-->
         <scene sceneID="ldU-45-jqd">
             <objects>
-                <tableViewController title="Ingredients" id="x3m-Hp-NZv" customClass="IngredientsTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Ardex S7 Plus" id="x3m-Hp-NZv" customClass="IngredientsTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZcU-Mw-Bcx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="-138" y="138"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Dashboard-->
         <scene sceneID="cOH-TF-Dte">
             <objects>
-                <tableViewController id="ic5-tb-taY" sceneMemberID="viewController">
+                <tableViewController id="ic5-tb-taY" customClass="DashbaordTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wj4-sx-vzO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +119,7 @@
                             <outlet property="delegate" destination="ic5-tb-taY" id="h9g-8Q-fkV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="CLp-we-hyt"/>
+                    <navigationItem key="navigationItem" title="Dashboard" id="CLp-we-hyt"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KRN-pk-BbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,8 +130,8 @@
             <objects>
                 <navigationController id="aSg-er-e6c" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Dashboard" image="dashboard" selectedImage="dashboard" id="mLX-Ev-FtK"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="is1-hi-h72">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="is1-hi-h72">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -146,8 +148,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j9e-eB-XX5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Infos" image="qrcode" selectedImage="qrcode" id="nS8-vs-RCv"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qSN-Wb-65O">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="qSN-Wb-65O">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -159,7 +161,7 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Tuition-->
         <scene sceneID="VoQ-28-QpO">
             <objects>
                 <tableViewController id="s82-oK-NDD" customClass="TuitionRootTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
@@ -182,7 +184,9 @@
                             <outlet property="delegate" destination="s82-oK-NDD" id="YE4-Oe-HVf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Nw2-r9-PTV"/>
+                    <navigationItem key="navigationItem" title="Tuition" id="Nw2-r9-PTV">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="wrm-zs-dZh"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="Tf7-LD-AOj" kind="show" identifier="showRequirementsSegue" id="Orv-YA-T8E"/>
                     </connections>
@@ -451,8 +455,8 @@
             <objects>
                 <navigationController id="uB8-0V-JWN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tuition" image="tuition" selectedImage="tuition" id="AIk-ee-SUV"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pe6-Eu-pip">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Pe6-Eu-pip">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -463,7 +467,7 @@
             </objects>
             <point key="canvasLocation" x="1048" y="875"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Settings-->
         <scene sceneID="BKn-mk-4XZ">
             <objects>
                 <tableViewController id="IaM-v6-wsC" sceneMemberID="viewController">
@@ -486,7 +490,7 @@
                             <outlet property="delegate" destination="IaM-v6-wsC" id="MPQ-7O-pna"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="D4M-zg-s0T"/>
+                    <navigationItem key="navigationItem" title="Settings" id="D4M-zg-s0T"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7p-mN-PvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -497,8 +501,8 @@
             <objects>
                 <navigationController id="eGi-Pf-WQw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="VNd-Mq-4cy"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5o7-fI-bME">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="5o7-fI-bME">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
