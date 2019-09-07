@@ -88,7 +88,7 @@ class RequirementsTableViewController: UITableViewController {
             return
         }
 
-        let xTranslation = recognizer.translation(in: self.sceneView).x
+        let xTranslation = recognizer.translation(in: self.sceneView).x * 0.5
         box.width = max(min(self.currentDepth + xTranslation / translationCoefficient, maximumDepth), minimumDepth) * RequirementsTableViewController.depthCoefficient
         self.didUpdateDepth(depth: Measurement(value: Double(box.width / RequirementsTableViewController.depthCoefficient), unit: .meters))
     }
