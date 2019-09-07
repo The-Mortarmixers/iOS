@@ -24,6 +24,8 @@
 		E1220FB42323846700E2E632 /* TuitionRootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1220FB32323846700E2E632 /* TuitionRootTableViewController.swift */; };
 		E1220FB623238E3600E2E632 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1220FB523238E3600E2E632 /* Measurements.swift */; };
 		E1220FBA2323AC1300E2E632 /* mortar.png in Resources */ = {isa = PBXBuildFile; fileRef = E1220FB92323AC1300E2E632 /* mortar.png */; };
+		E1220FBC2323B41900E2E632 /* MQTTServicer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1220FBB2323B41900E2E632 /* MQTTServicer.swift */; };
+		E1220FBE2323CFF300E2E632 /* MassProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1220FBD2323CFF300E2E632 /* MassProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		E1220FB32323846700E2E632 /* TuitionRootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuitionRootTableViewController.swift; sourceTree = "<group>"; };
 		E1220FB523238E3600E2E632 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
 		E1220FB92323AC1300E2E632 /* mortar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mortar.png; sourceTree = "<group>"; };
+		E1220FBB2323B41900E2E632 /* MQTTServicer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTServicer.swift; sourceTree = "<group>"; };
+		E1220FBD2323CFF300E2E632 /* MassProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 				E1220FB92323AC1300E2E632 /* mortar.png */,
 				BB32E80D2323B996000421CA /* IngredientsTableViewController.swift */,
 				BB32E80F2323BC9F000421CA /* RulerARProViewController.swift */,
+				E1220FBB2323B41900E2E632 /* MQTTServicer.swift */,
+				E1220FBD2323CFF300E2E632 /* MassProvider.swift */,
 			);
 			path = Mandalo;
 			sourceTree = "<group>";
@@ -359,8 +365,10 @@
 				BB32E80E2323B996000421CA /* IngredientsTableViewController.swift in Sources */,
 				E1220FB02323805C00E2E632 /* RequirementsTableViewController.swift in Sources */,
 				E1220FB42323846700E2E632 /* TuitionRootTableViewController.swift in Sources */,
+				E1220FBE2323CFF300E2E632 /* MassProvider.swift in Sources */,
 				BB6DAE2B2322EB490046F063 /* Mandalo.xcdatamodeld in Sources */,
 				BB6DAE232322EB490046F063 /* AppDelegate.swift in Sources */,
+				E1220FBC2323B41900E2E632 /* MQTTServicer.swift in Sources */,
 				BB6DAE542322EC1B0046F063 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
