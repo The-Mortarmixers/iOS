@@ -10,7 +10,18 @@ import UIKit
 
 class DashboardTableViewController: UITableViewController {
 
-    let data = ["Everything is ok"]
+    struct DashboardData {
+        let description: String
+        let value: String
+    }
+
+    let data = [DashboardData(description: "Health Check: ", value: "✅"),
+                DashboardData(description: "Humidity:", value: "46 %"),
+                DashboardData(description: "Temperature:", value: "23 °C"),
+                DashboardData(description: "Wall Integrity", value: "Good"),
+                DashboardData(description: "Wall Cracks:", value: "None"),
+                DashboardData(description: "Wall Holes:", value: "None"),
+                DashboardData(description: "Mold:", value: "None")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +49,8 @@ class DashboardTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dashboardCell", for: indexPath)
-        cell.textLabel?.text = data[indexPath.row]
+        cell.textLabel?.text = data[indexPath.row].description
+        cell.detailTextLabel?.text = data[indexPath.row].value
         return cell
     }
 
