@@ -15,7 +15,12 @@ class IngredientsTableViewController: UITableViewController {
         let percent: Int
     }
 
-    let data = [IngredientData(name: "Beton", percent: 20)]
+    // TODO: Ingredients Überarbeiten
+    let data = [IngredientData(name: "Mortar", percent: 20),
+                IngredientData(name: "Human Body", percent: 5),
+                IngredientData(name: "Sand", percent: 70),
+                IngredientData(name: "Roboy", percent: 5)]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

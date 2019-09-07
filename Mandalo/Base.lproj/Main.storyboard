@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="137.94642857142856"/>
         </scene>
-        <!--Bestandteile-->
+        <!--Ingredients-->
         <scene sceneID="ldU-45-jqd">
             <objects>
-                <tableViewController title="Bestandteile" id="x3m-Hp-NZv" customClass="IngredientsTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Ingredients" id="x3m-Hp-NZv" customClass="IngredientsTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZcU-Mw-Bcx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
