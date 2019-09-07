@@ -431,6 +431,21 @@
             </objects>
             <point key="canvasLocation" x="2814.4927536231885" y="876.5625"/>
         </scene>
+        <!--RulerAR Pro View Controller-->
+        <scene sceneID="0Bj-Ga-DfG">
+            <objects>
+                <viewController id="l2X-Ji-VBX" customClass="RulerARProViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O1Z-j8-QSJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="t5C-bG-u5Q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOT-Tb-mRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="1264"/>
+        </scene>
         <!--Tuition-->
         <scene sceneID="cSA-Nj-Mte">
             <objects>

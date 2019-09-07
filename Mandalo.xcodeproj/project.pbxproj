@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3733EF9726590C5861B4FFC6 /* Pods_Mandalo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9F48F6E97955C0462EEA94 /* Pods_Mandalo.framework */; };
 		BB32E80E2323B996000421CA /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32E80D2323B996000421CA /* IngredientsTableViewController.swift */; };
+		BB32E8102323BC9F000421CA /* RulerARProViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32E80F2323BC9F000421CA /* RulerARProViewController.swift */; };
 		BB6DAE232322EB490046F063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE222322EB490046F063 /* AppDelegate.swift */; };
 		BB6DAE252322EB490046F063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE242322EB490046F063 /* ViewController.swift */; };
 		BB6DAE282322EB490046F063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6DAE262322EB490046F063 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		4C75589A991E021E6AC1E03F /* Pods-Mandalo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mandalo.debug.xcconfig"; path = "Target Support Files/Pods-Mandalo/Pods-Mandalo.debug.xcconfig"; sourceTree = "<group>"; };
 		96589A2DBEA5EFD9A4C51CE7 /* Pods-Mandalo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mandalo.release.xcconfig"; path = "Target Support Files/Pods-Mandalo/Pods-Mandalo.release.xcconfig"; sourceTree = "<group>"; };
 		BB32E80D2323B996000421CA /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
+		BB32E80F2323BC9F000421CA /* RulerARProViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerARProViewController.swift; sourceTree = "<group>"; };
 		BB6DAE1F2322EB490046F063 /* Mandalo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mandalo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6DAE222322EB490046F063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB6DAE242322EB490046F063 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				E1220FB523238E3600E2E632 /* Measurements.swift */,
 				E1220FB92323AC1300E2E632 /* mortar.png */,
 				BB32E80D2323B996000421CA /* IngredientsTableViewController.swift */,
+				BB32E80F2323BC9F000421CA /* RulerARProViewController.swift */,
 			);
 			path = Mandalo;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB32E8102323BC9F000421CA /* RulerARProViewController.swift in Sources */,
 				BB6DAE252322EB490046F063 /* ViewController.swift in Sources */,
 				E1220FB623238E3600E2E632 /* Measurements.swift in Sources */,
 				BB32E80E2323B996000421CA /* IngredientsTableViewController.swift in Sources */,
