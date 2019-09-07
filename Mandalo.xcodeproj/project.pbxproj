@@ -20,6 +20,7 @@
 		E1220FB22323811500E2E632 /* WallScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = E1220FB12323811500E2E632 /* WallScene.scn */; };
 		E1220FB42323846700E2E632 /* TuitionRootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1220FB32323846700E2E632 /* TuitionRootTableViewController.swift */; };
 		E1220FB623238E3600E2E632 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1220FB523238E3600E2E632 /* Measurements.swift */; };
+		E1220FBA2323AC1300E2E632 /* mortar.png in Resources */ = {isa = PBXBuildFile; fileRef = E1220FB92323AC1300E2E632 /* mortar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E1220FB12323811500E2E632 /* WallScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = WallScene.scn; sourceTree = "<group>"; };
 		E1220FB32323846700E2E632 /* TuitionRootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuitionRootTableViewController.swift; sourceTree = "<group>"; };
 		E1220FB523238E3600E2E632 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
+		E1220FB92323AC1300E2E632 /* mortar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mortar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				E1220FAF2323805C00E2E632 /* RequirementsTableViewController.swift */,
 				E1220FB32323846700E2E632 /* TuitionRootTableViewController.swift */,
 				E1220FB523238E3600E2E632 /* Measurements.swift */,
+				E1220FB92323AC1300E2E632 /* mortar.png */,
 			);
 			path = Mandalo;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			files = (
 				BB6DAE302322EB4E0046F063 /* LaunchScreen.storyboard in Resources */,
 				E1220FB22323811500E2E632 /* WallScene.scn in Resources */,
+				E1220FBA2323AC1300E2E632 /* mortar.png in Resources */,
 				BB6DAE2D2322EB4E0046F063 /* Assets.xcassets in Resources */,
 				BB6DAE282322EB490046F063 /* Main.storyboard in Resources */,
 			);

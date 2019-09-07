@@ -122,11 +122,13 @@ class RequirementsTableViewController: UITableViewController {
     }
 
     private func calculateRequirements(volume: Measurement<UnitVolume>) {
+        let total = 12 + 3 + 0.1 + 0.4
+
         let literVolume = volume.converted(to: .liters).value
-        let sandPart = Measurement(value: literVolume, unit: UnitMass.kilograms) / 3.0
-        let cementPart = Measurement(value: literVolume, unit: UnitMass.kilograms) / 3.0
-        let polymerPart = Measurement(value: literVolume, unit: UnitMass.kilograms) / 3.0
-        let waterPart = Measurement(value: literVolume, unit: UnitMass.kilograms) / 3.0
+        let sandPart = 12 * Measurement(value: literVolume, unit: UnitMass.kilograms) / total
+        let cementPart = 3 * Measurement(value: literVolume, unit: UnitMass.kilograms) / total
+        let polymerPart = 0.1 * Measurement(value: literVolume, unit: UnitMass.kilograms) / total
+        let waterPart = 0.4 * Measurement(value: literVolume, unit: UnitMass.kilograms) / total
 
         self.requirements = Requirements(sand: sandPart, cement: cementPart, polymer: polymerPart, water: waterPart)
         self.presentRequirements()
