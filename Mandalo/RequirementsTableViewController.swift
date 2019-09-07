@@ -11,12 +11,30 @@ import SceneKit
 
 class RequirementsTableViewController: UITableViewController {
 
+    private struct Requirements {
+        let sand: Measurement<UnitMass>
+        let cement: Measurement<UnitMass>
+        let polymer: Measurement<UnitMass>
+        let water: Measurement<UnitMass>
+    }
+
     @IBOutlet weak var sceneView: SCNView!
     @IBOutlet weak var volumeLabel: UILabel!
     @IBOutlet weak var depthLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var widthLabel: UILabel!
     @IBOutlet weak var areaLabel: UILabel!
+    @IBOutlet weak var sandMassLabel: UILabel!
+    @IBOutlet weak var cementMassLabel: UILabel!
+    @IBOutlet weak var polymerMassLabel: UILabel!
+    @IBOutlet weak var waterMassLabel: UILabel!
+    @IBOutlet weak var totalMassLabel: UILabel!
+
+    @IBOutlet weak var sandContentView: UIView!
+    @IBOutlet weak var cementContentView: UIView!
+    @IBOutlet weak var polymerContentView: UIView!
+    @IBOutlet weak var waterContentView: UIView!
+    
 
     var measurements: Measurements?
 
@@ -24,14 +42,17 @@ class RequirementsTableViewController: UITableViewController {
         return Measurement(value: Double(self.currentDepth), unit: .meters)
     }
 
+    private var volume: Measurement<UnitVolume> = Measurement(value: 0, unit: .liters)
+    private var requirements: Requirements?
+
     private var currentDepth: CGFloat = 0.03 {
         didSet {
             self.didUpdateDepth(depth: self.depth)
         }
     }
 
-    private static let depthCoefficient: CGFloat = 2
-    private let maximumDepth: CGFloat = 0.3
+    private static let depthCoefficient: CGFloat = 10
+    private let maximumDepth: CGFloat = 0.1
     private let minimumDepth: CGFloat = 0.002
     private let translationCoefficient: CGFloat = 800.0
     private let formatter: MeasurementFormatter = {
@@ -74,7 +95,7 @@ class RequirementsTableViewController: UITableViewController {
 
     private func didUpdateDepth(depth: Measurement<UnitLength>) {
         depthLabel.text = "Tiefe:\t\t\(formatter.string(from: depth.converted(to: .centimeters)))"
-        setVolumeLabel(depth: depth)
+        setVolume(depth: depth)
     }
 
     private func setupLabels() {
@@ -86,14 +107,40 @@ class RequirementsTableViewController: UITableViewController {
         self.widthLabel.text = "Breite:\t\t\(formatter.string(from: measurements.width.converted(to: .centimeters)))"
         let area = measurements.height.converted(to: .meters).value * measurements.width.converted(to: .meters).value
         self.areaLabel.text = "Fläche:\t\t\(formatter.string(from: Measurement(value: area, unit: UnitArea.squareMeters)))"
-        setVolumeLabel(depth: self.depth)
+        setVolume(depth: self.depth)
     }
 
-    private func setVolumeLabel(depth: Measurement<UnitLength>) {
+    private func setVolume(depth: Measurement<UnitLength>) {
         guard let measurements = self.measurements
             else { return }
 
-        let volume = measurements.height.converted(to: .decimeters).value * measurements.width.converted(to: .decimeters).value * depth.converted(to: .decimeters).value
-        self.volumeLabel.text = "\(formatter.string(from: Measurement(value: volume, unit: UnitVolume.liters)))"
+        let volumeValue = measurements.height.converted(to: .decimeters).value * measurements.width.converted(to: .decimeters).value * depth.converted(to: .decimeters).value
+
+        self.volume = Measurement(value: volumeValue, unit: UnitVolume.liters)
+        self.volumeLabel.text = formatter.string(from: volume)
+        self.calculateRequirements(volume: self.volume)
+    }
+
+    private func calculateRequirements(volume: Measurement<UnitVolume>) {
+        let literVolume = volume.converted(to: .liters).value
+        let sandPart = Measurement(value: literVolume, unit: UnitMass.kilograms) / 3.0
+        let cementPart = Measurement(value: literVolume, unit: UnitMass.kilograms) / 3.0
+        let polymerPart = Measurement(value: literVolume, unit: UnitMass.kilograms) / 3.0
+        let waterPart = Measurement(value: literVolume, unit: UnitMass.kilograms) / 3.0
+
+        self.requirements = Requirements(sand: sandPart, cement: cementPart, polymer: polymerPart, water: waterPart)
+        self.presentRequirements()
+    }
+
+    private func presentRequirements() {
+        guard let requirements = self.requirements
+            else { return }
+
+        self.sandMassLabel.text = formatter.string(from: requirements.sand)
+        self.cementMassLabel.text = formatter.string(from: requirements.cement)
+        self.polymerMassLabel.text = formatter.string(from: requirements.polymer)
+        self.waterMassLabel.text = formatter.string(from: requirements.water)
+
+        self.totalMassLabel.text = formatter.string(from: requirements.sand + requirements.cement + requirements.polymer + requirements.water)
     }
 }
