@@ -21,7 +21,7 @@
 		BB6DAE542322EC1B0046F063 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DAE532322EC1B0046F063 /* ScanViewController.swift */; };
 		E1220FB02323805C00E2E632 /* RequirementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1220FAF2323805C00E2E632 /* RequirementsTableViewController.swift */; };
 		E1220FB22323811500E2E632 /* WallScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = E1220FB12323811500E2E632 /* WallScene.scn */; };
-		E1220FB42323846700E2E632 /* TuitionRootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1220FB32323846700E2E632 /* TuitionRootTableViewController.swift */; };
+		E1220FB42323846700E2E632 /* TuitionRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1220FB32323846700E2E632 /* TuitionRootViewController.swift */; };
 		E1220FB623238E3600E2E632 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1220FB523238E3600E2E632 /* Measurements.swift */; };
 		E1220FBA2323AC1300E2E632 /* mortar.png in Resources */ = {isa = PBXBuildFile; fileRef = E1220FB92323AC1300E2E632 /* mortar.png */; };
 /* End PBXBuildFile section */
@@ -66,7 +66,7 @@
 		CE9F48F6E97955C0462EEA94 /* Pods_Mandalo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mandalo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1220FAF2323805C00E2E632 /* RequirementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementsTableViewController.swift; sourceTree = "<group>"; };
 		E1220FB12323811500E2E632 /* WallScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = WallScene.scn; sourceTree = "<group>"; };
-		E1220FB32323846700E2E632 /* TuitionRootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuitionRootTableViewController.swift; sourceTree = "<group>"; };
+		E1220FB32323846700E2E632 /* TuitionRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuitionRootViewController.swift; sourceTree = "<group>"; };
 		E1220FB523238E3600E2E632 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
 		E1220FB92323AC1300E2E632 /* mortar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mortar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,7 +149,7 @@
 				BB6DAE292322EB490046F063 /* Mandalo.xcdatamodeld */,
 				BB6DAE532322EC1B0046F063 /* ScanViewController.swift */,
 				E1220FAF2323805C00E2E632 /* RequirementsTableViewController.swift */,
-				E1220FB32323846700E2E632 /* TuitionRootTableViewController.swift */,
+				E1220FB32323846700E2E632 /* TuitionRootViewController.swift */,
 				E1220FB523238E3600E2E632 /* Measurements.swift */,
 				E1220FB92323AC1300E2E632 /* mortar.png */,
 				BB32E80D2323B996000421CA /* IngredientsTableViewController.swift */,
@@ -358,7 +358,7 @@
 				E1220FB623238E3600E2E632 /* Measurements.swift in Sources */,
 				BB32E80E2323B996000421CA /* IngredientsTableViewController.swift in Sources */,
 				E1220FB02323805C00E2E632 /* RequirementsTableViewController.swift in Sources */,
-				E1220FB42323846700E2E632 /* TuitionRootTableViewController.swift in Sources */,
+				E1220FB42323846700E2E632 /* TuitionRootViewController.swift in Sources */,
 				BB6DAE2B2322EB490046F063 /* Mandalo.xcdatamodeld in Sources */,
 				BB6DAE232322EB490046F063 /* AppDelegate.swift in Sources */,
 				BB6DAE542322EC1B0046F063 /* ScanViewController.swift in Sources */,
@@ -538,8 +538,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8CXFSS8Q3N;
+				DEVELOPMENT_TEAM = EVQT4YM28J;
 				INFOPLIST_FILE = Mandalo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,8 +558,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8CXFSS8Q3N;
+				DEVELOPMENT_TEAM = EVQT4YM28J;
 				INFOPLIST_FILE = Mandalo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
