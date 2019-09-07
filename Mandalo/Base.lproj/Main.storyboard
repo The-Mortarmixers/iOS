@@ -24,7 +24,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="NUt-wk-rGn"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="x3m-Hp-NZv" kind="show" identifier="QRCodeScannedSegue" id="Sae-Wl-sgr"/>
+                        <segue destination="gJz-Jm-ri6" kind="show" identifier="QRCodeScannedSegue" id="4Tv-G1-ZAQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -32,23 +32,57 @@
             <point key="canvasLocation" x="1957.9710144927537" y="137.94642857142856"/>
         </scene>
         <!--UnternehmerTUM Wall-->
+        <scene sceneID="yhO-aJ-2WP">
+            <objects>
+                <viewController title="UnternehmerTUM Wall" id="gJz-Jm-ri6" customClass="UnternehmerTUMViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EhR-3j-WdF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ingredients" translatesAutoresizingMaskIntoConstraints="NO" id="IvZ-Th-OHz">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9DG-0m-a9L" appends="YES" id="YCP-rv-byF"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ng0-QZ-Py8" firstAttribute="trailing" secondItem="IvZ-Th-OHz" secondAttribute="trailing" id="22s-01-kM2"/>
+                            <constraint firstItem="IvZ-Th-OHz" firstAttribute="top" secondItem="ng0-QZ-Py8" secondAttribute="top" id="5Pg-66-kY9"/>
+                            <constraint firstItem="ng0-QZ-Py8" firstAttribute="bottom" secondItem="IvZ-Th-OHz" secondAttribute="bottom" id="5Sd-wY-Ad3"/>
+                            <constraint firstItem="IvZ-Th-OHz" firstAttribute="leading" secondItem="ng0-QZ-Py8" secondAttribute="leading" id="Jo7-FZ-Ezy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ng0-QZ-Py8"/>
+                    </view>
+                    <connections>
+                        <outlet property="wallDetailsImage" destination="IvZ-Th-OHz" id="oja-wK-rZ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3Y-3I-iF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9DG-0m-a9L">
+                    <connections>
+                        <segue destination="x3m-Hp-NZv" kind="show" id="M74-oN-OMu"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2768" y="138"/>
+        </scene>
+        <!--Details-->
         <scene sceneID="ldU-45-jqd">
             <objects>
-                <tableViewController title="UnternehmerTUM Wall" id="x3m-Hp-NZv" customClass="IngredientsTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZcU-Mw-Bcx">
+                <tableViewController title="Details" id="x3m-Hp-NZv" customClass="IngredientsTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZcU-Mw-Bcx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ingredients" id="WR1-VV-9dY">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="203"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredientCell" textLabel="dcP-AV-mqz" detailTextLabel="l7j-aF-k0k" style="IBUITableViewCellStyleValue1" id="mjT-7b-fOd">
-                                <rect key="frame" x="0.0" y="231" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mjT-7b-fOd" id="4yz-fX-Xbg">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dcP-AV-mqz">
@@ -77,7 +111,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99L-qS-b6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2814" y="138"/>
+            <point key="canvasLocation" x="3613" y="138"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hjT-p0-YHm">
@@ -103,18 +137,38 @@
         <!--Dashboard-->
         <scene sceneID="cOH-TF-Dte">
             <objects>
-                <tableViewController id="ic5-tb-taY" customClass="DashbaordTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wj4-sx-vzO">
+                <tableViewController id="ic5-tb-taY" customClass="DashboardTableViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wj4-sx-vzO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smart-home" id="xEZ-Dp-ahf">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="203"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aKp-xc-huQ">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dashboardCell" textLabel="Fha-hG-sp4" detailTextLabel="QZn-PR-isN" style="IBUITableViewCellStyleValue1" id="aKp-xc-huQ">
+                                <rect key="frame" x="0.0" y="231" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aKp-xc-huQ" id="pgI-dZ-ICS">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fha-hG-sp4">
+                                            <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QZn-PR-isN">
+                                            <rect key="frame" x="350" y="12" width="44" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -127,7 +181,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KRN-pk-BbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="-710"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="-710.49107142857144"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="LnM-hm-B3D">
@@ -551,7 +605,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOT-Tb-mRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3845" y="1597"/>
+            <point key="canvasLocation" x="3741" y="1598"/>
         </scene>
         <!--Tuition-->
         <scene sceneID="cSA-Nj-Mte">
@@ -622,6 +676,7 @@
         <image name="ingredients" width="750" height="535"/>
         <image name="qrcode" width="30" height="30"/>
         <image name="settings" width="30" height="30"/>
+        <image name="smart-home" width="868" height="441"/>
         <image name="tuition" width="30" height="30"/>
     </resources>
 </document>
