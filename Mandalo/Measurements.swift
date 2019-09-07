@@ -9,6 +9,6 @@
 import Foundation
 
 struct Measurements {
-    let length: Measurement<UnitLength>
+    let height: Measurement<UnitLength>
     let width: Measurement<UnitLength>
 }
