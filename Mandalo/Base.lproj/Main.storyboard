@@ -223,6 +223,38 @@
                                 <constraint firstAttribute="trailing" secondItem="h4F-SD-GAM" secondAttribute="trailing" id="Z1J-iw-4hW"/>
                             </constraints>
                         </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="Ha9-pb-It6" userLabel="ButtonView">
+                            <rect key="frame" x="0.0" y="618" width="414" height="132"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-00-1NX">
+                                    <rect key="frame" x="8" y="16" width="398" height="100"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uV-bm-zt1" customClass="MandaloButton" customModule="Mandalo" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="44"/>
+                                            <color key="backgroundColor" red="0.83921568629999999" green="0.74509803919999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Buy"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddk-kA-Fj4" customClass="MandaloButton" customModule="Mandalo" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="56" width="398" height="44"/>
+                                            <color key="backgroundColor" red="0.83921568629999999" green="0.74509803919999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Start"/>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="l8g-00-1NX" firstAttribute="width" secondItem="Ha9-pb-It6" secondAttribute="width" constant="-16" id="BAH-Wb-GPY"/>
+                                <constraint firstItem="l8g-00-1NX" firstAttribute="centerX" secondItem="Ha9-pb-It6" secondAttribute="centerX" id="P3o-5Q-P11"/>
+                                <constraint firstItem="l8g-00-1NX" firstAttribute="height" secondItem="Ha9-pb-It6" secondAttribute="height" constant="-32" id="rUD-xb-NJK"/>
+                                <constraint firstItem="l8g-00-1NX" firstAttribute="centerY" secondItem="Ha9-pb-It6" secondAttribute="centerY" id="ttK-nb-PvN"/>
+                            </constraints>
+                        </view>
                         <sections>
                             <tableViewSection id="Cu5-LZ-o1R">
                                 <cells>
@@ -452,7 +484,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOT-Tb-mRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6" y="1264"/>
+            <point key="canvasLocation" x="3845" y="1597"/>
         </scene>
         <!--Tuition-->
         <scene sceneID="cSA-Nj-Mte">
