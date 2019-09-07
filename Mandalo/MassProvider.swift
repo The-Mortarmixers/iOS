@@ -17,7 +17,8 @@ class MassProvider: MQTTServicerDelegate {
     private var wasZeroed: Bool = false
 
     init(servicer: MQTTServicer) {
-        servicer.add(delegate: self)
+        servicer.delegate = self
+        servicer.beginReceivingMass()
     }
 
     func zero() {

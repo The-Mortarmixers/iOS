@@ -11,13 +11,6 @@ import SceneKit
 
 class RequirementsTableViewController: UITableViewController {
 
-    private struct Requirements {
-        let sand: Measurement<UnitMass>
-        let cement: Measurement<UnitMass>
-        let polymer: Measurement<UnitMass>
-        let water: Measurement<UnitMass>
-    }
-
     @IBOutlet weak var sceneView: SCNView!
     @IBOutlet weak var volumeLabel: UILabel!
     @IBOutlet weak var depthLabel: UILabel!
@@ -68,6 +61,13 @@ class RequirementsTableViewController: UITableViewController {
         self.setupLabels()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+
+        if let destination = segue.destination as? MixingViewController {
+            destination.requirements = self.requirements
+        }
+    }
 
     private func getWallNode() -> SCNNode? {
         let rootNode = sceneView.scene?.rootNode

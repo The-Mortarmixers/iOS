@@ -244,7 +244,7 @@
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Start"/>
                                             <connections>
-                                                <segue destination="ACv-Rt-D0i" kind="show" id="7cJ-JZ-B7L"/>
+                                                <segue destination="ACv-Rt-D0i" kind="show" identifier="startMixingSegue" id="7cJ-JZ-B7L"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -477,24 +477,62 @@
         <!--Start Mixing-->
         <scene sceneID="mXw-D9-Opp">
             <objects>
-                <viewController title="Start Mixing" id="ACv-Rt-D0i" sceneMemberID="viewController">
+                <viewController title="Start Mixing" id="ACv-Rt-D0i" customClass="MixingViewController" customModule="Mandalo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kRf-zU-b1F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4I-5G-v1e">
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="BucketScene.scn" translatesAutoresizingMaskIntoConstraints="NO" id="b4I-5G-v1e">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                             </sceneKitView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfW-aR-7am">
+                                <rect key="frame" x="0.0" y="685" width="414" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eOb-Th-Pe2">
+                                        <rect key="frame" x="16" y="8" width="382" height="112"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZT-ve-mAH">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="91.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ki-H4-rgI">
+                                                <rect key="frame" x="0.0" y="91.5" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="eOb-Th-Pe2" secondAttribute="bottom" constant="8" id="2yG-Ep-z6e"/>
+                                    <constraint firstAttribute="trailing" secondItem="eOb-Th-Pe2" secondAttribute="trailing" constant="16" id="3Pa-Pp-WrX"/>
+                                    <constraint firstAttribute="height" constant="128" id="JsX-gy-m4C"/>
+                                    <constraint firstItem="eOb-Th-Pe2" firstAttribute="leading" secondItem="cfW-aR-7am" secondAttribute="leading" constant="16" id="gcL-Y6-A3c"/>
+                                    <constraint firstItem="eOb-Th-Pe2" firstAttribute="top" secondItem="cfW-aR-7am" secondAttribute="top" constant="8" id="oWC-ux-6ds"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="b4I-5G-v1e" firstAttribute="leading" secondItem="BYq-By-Ycw" secondAttribute="leading" id="1uD-qW-XnB"/>
                             <constraint firstItem="b4I-5G-v1e" firstAttribute="trailing" secondItem="BYq-By-Ycw" secondAttribute="trailing" id="Aih-Bw-yah"/>
                             <constraint firstItem="b4I-5G-v1e" firstAttribute="top" secondItem="BYq-By-Ycw" secondAttribute="top" id="Heu-gh-hgm"/>
+                            <constraint firstItem="BYq-By-Ycw" firstAttribute="trailing" secondItem="cfW-aR-7am" secondAttribute="trailing" id="QKP-mj-LYp"/>
                             <constraint firstItem="BYq-By-Ycw" firstAttribute="bottom" secondItem="b4I-5G-v1e" secondAttribute="bottom" id="TJO-JP-EbB"/>
+                            <constraint firstItem="BYq-By-Ycw" firstAttribute="bottom" secondItem="cfW-aR-7am" secondAttribute="bottom" id="ZeL-I5-y3X"/>
+                            <constraint firstItem="cfW-aR-7am" firstAttribute="leading" secondItem="BYq-By-Ycw" secondAttribute="leading" id="b1m-T2-AS0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BYq-By-Ycw"/>
                     </view>
+                    <connections>
+                        <outlet property="instructionDetailsLabel" destination="4Ki-H4-rgI" id="7S0-oe-t9C"/>
+                        <outlet property="instructionHeadlineLabel" destination="yZT-ve-mAH" id="sC4-89-wdI"/>
+                        <outlet property="sceneView" destination="b4I-5G-v1e" id="TTr-nb-OaO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nKR-BC-nKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

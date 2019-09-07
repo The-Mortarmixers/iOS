@@ -12,14 +12,15 @@ import CocoaMQTT
 class MQTTServicer {
 
     static let shared = MQTTServicer()
+    weak var delegate: MQTTServicerDelegate?
 
     private let mqtt: CocoaMQTT
     private static let mqttHost = "172.20.10.4"
     private static let mqttPort = 1883
     private let mixerStatusTopic = "mixer/status"
-    private let mixerMassTopic = "mixer/mass"
+    private let mixerMassTopic = "mixer/sensors/weight"
     private(set) var isConnected = false
-    private var delegates: [MQTTServicerDelegate] = []
+    private(set) var timer: Timer?
 
     private init() {
         self.mqtt = CocoaMQTT(clientID: "App-" + String(ProcessInfo().processIdentifier),
@@ -49,24 +50,25 @@ class MQTTServicer {
         mqtt.subscribe(self.mixerMassTopic)
 
         self.mqtt.didReceiveMessage = { [weak self] (mqtt, message, x) in
-            mqtt.didReceiveMessage(mqtt, message, x)
-
-            print("Did receive MQTT message on topic: \(message.topic), message: \(message.string)")
+            print("Did receive MQTT message on topic: \(message.topic), message: \(message.string ?? "nil")")
 
             if message.topic == self?.mixerMassTopic,
                 let massString = message.string,
                 let mass = Double(massString) {
-                self?.delegates.forEach { $0.didReceiveMass(mass: mass) }
+                self?.delegate?.didReceiveMass(mass: mass)
             }
         }
+
+        var mass: Double = 0
+        let timer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { [weak self] (timer) in
+            mass += 1000
+            self?.delegate?.didReceiveMass(mass: mass)
+        }
+        self.timer = timer
     }
 
     func sendStatus(status: Bool) {
         mqtt.publish(mixerStatusTopic, withString: status ? "ON" : "OFF", qos: .qos1)
-    }
-
-    func add(delegate: MQTTServicerDelegate) {
-        delegates.append(delegate)
     }
 }
 
