@@ -15,7 +15,7 @@ class ScanViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        //self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     override func viewWillAppear(_ animated: Bool) {
